@@ -12,7 +12,14 @@
     <section id="banner">
         <img src="lostcode.png" class="logo"/>
         <div class="banner-text">
-            <h1>LostCode</h1>
+            <h1 id="header">LostCode</h1>
+            <script>
+                var header = document.getElementById("header")
+
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    header.style.fontSize = "40px";
+                }
+            </script>
             <p>Work in progress...</p>
             <div class="banner-btn">
                 <a href="#"><span></span>About Us</a>
